@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>About Us | murdigames</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        :root {
+            --primary: #7c3aed;
+            --secondary: #22c55e;
+            --accent: #fbbf24;
+            --dark: #020617;
+            --card: #0f172a;
+            --text: #e5e7eb;
+            --muted: #9ca3af;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: radial-gradient(circle at top, #111827, #020617);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 80px 20px;
+            background:
+                linear-gradient(135deg, rgba(124, 58, 237, 0.15), rgba(34, 197, 94, 0.1)),
+                url('https://images.unsplash.com/photo-1556438064-2d7646166914?auto=format&fit=crop&w=1400&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            backdrop-filter: blur(6px);
+        }
+
+        .hero h1 {
+            font-size: 72px;
+            margin-bottom: 20px;
+            text-transform: lowercase;
+            letter-spacing: 2px;
+        }
+
+        .hero h1 span {
+            color: var(--primary);
+        }
+
+        .hero p {
+            font-size: 22px;
+            color: var(--muted);
+        }
+
+        /* SECTIONS */
+        section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 100px 20px;
+        }
+
+        section h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+
+        section p {
+            font-size: 18px;
+            color: var(--muted);
+            max-width: 900px;
+        }
+
+        /* CARDS */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .card {
+            background: linear-gradient(180deg, #0f172a, #020617);
+            border-radius: 18px;
+            padding: 35px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+        }
+
+        .card h3 {
+            font-size: 24px;
+            color: var(--accent);
+            margin-bottom: 10px;
+        }
+
+        /* PLATFORMS */
+        .platforms {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .platform {
+            flex: 1;
+            min-width: 260px;
+            background: var(--card);
+            padding: 40px;
+            border-radius: 20px;
+        }
+
+        .platform h3 {
+            font-size: 28px;
+            color: var(--secondary);
+            margin-bottom: 10px;
+        }
+
+        /* STATS */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .stat {
+            background: #020617;
+            padding: 40px 20px;
+            border-radius: 18px;
+        }
+
+        .stat h3 {
+            font-size: 48px;
+            color: var(--secondary);
+            margin-bottom: 5px;
+        }
+
+        .stat p {
+            font-size: 16px;
+            color: var(--muted);
+        }
+
+        /* FOOTER */
+        footer {
+            background: #020617;
+            text-align: center;
+            padding: 50px 20px;
+            border-top: 1px solid #111827;
+        }
+
+        footer p {
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        @media (max-width: 700px) {
+            .hero h1 {
+                font-size: 48px;
+            }
+
+            section h2 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HERO -->
+    <div class="hero">
+        <div class="hero-content">
+            <h1><span>murdi</span>games</h1>
+            <p>
+                We build bold, immersive, and unforgettable games for mobile and desktop platforms.
+                Powered by creativity. Driven by players.
+            </p>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section>
+        <h2>Who We Are</h2>
+        <p>
+            murdigames is an independent game development studio focused on creating engaging,
+            high-quality games across mobile and desktop platforms. We are a team of developers,
+            artists, and designers who believe games are more than entertainment — they are experiences.
+        </p>
+
+        <div class="grid">
+            <div class="card">
+                <h3>🎮 Player First</h3>
+                <p>
+                    Every decision we make starts with the player experience.
+                    Fun, balance, and immersion come first.
+                </p>
+            </div>
+            <div class="card">
+                <h3>🧠 Innovation</h3>
+                <p>
+                    We experiment with mechanics, visuals, and storytelling
+                    to create something fresh every time.
+                </p>
+            </div>
+            <div class="card">
+                <h3>🔥 Passion</h3>
+                <p>
+                    We are gamers ourselves — passionate about building worlds
+                    people love to spend time in.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PLATFORMS -->
+    <section>
+        <h2>What We Build</h2>
+
+        <div class="platforms">
+            <div class="platform">
+                <h3>📱 Mobile Games</h3>
+                <p>
+                    High-performance Android & iOS games designed for smooth gameplay,
+                    intuitive controls, and long-term engagement.
+                </p>
+            </div>
+            <div class="platform">
+                <h3>🖥 Desktop Games</h3>
+                <p>
+                    Rich desktop experiences for Windows and beyond, built with
+                    powerful engines and deep gameplay systems.
+                </p>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat">
+                <h3>30+</h3>
+                <p>Games & Prototypes</p>
+            </div>
+            <div class="stat">
+                <h3>5M+</h3>
+                <p>Global Players</p>
+            </div>
+            <div class="stat">
+                <h3>10+</h3>
+                <p>Years Combined Experience</p>
+            </div>
+            <div class="stat">
+                <h3>∞</h3>
+                <p>Ideas in Progress</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- VISION -->
+    <section>
+        <h2>Our Vision</h2>
+        <p>
+            Our vision is to grow murdigames into a globally recognized studio known for
+            creativity, quality, and unforgettable gameplay experiences.
+            We aim to build games that players remember, talk about, and return to.
+        </p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            © 2026 murdigames. All rights reserved.<br>
+            Built with passion for players worldwide.
+        </p>
+    </footer>
+
+</body>
+
+</html>

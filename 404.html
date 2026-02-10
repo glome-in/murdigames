@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>404 | murdigames</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        :root {
+            --primary: #7c3aed;
+            --secondary: #22c55e;
+            --accent: #fbbf24;
+            --dark: #020617;
+            --card: #0f172a;
+            --text: #e5e7eb;
+            --muted: #9ca3af;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background:
+                radial-gradient(circle at top, #111827, #020617);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .error-container {
+            max-width: 900px;
+            padding: 80px 30px;
+            background: linear-gradient(180deg, #0f172a, #020617);
+            border-radius: 24px;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .error-container::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at center, rgba(124, 58, 237, 0.15), transparent 70%);
+            pointer-events: none;
+        }
+
+        h1 {
+            font-size: 120px;
+            margin: 0;
+            color: var(--primary);
+            line-height: 1;
+        }
+
+        h2 {
+            font-size: 36px;
+            margin: 20px 0 10px;
+        }
+
+        p {
+            font-size: 18px;
+            color: var(--muted);
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 14px 28px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+
+        .btn-home {
+            background: var(--primary);
+            color: white;
+        }
+
+        .btn-home:hover {
+            background: #6d28d9;
+        }
+
+        .btn-games {
+            background: transparent;
+            border: 2px solid var(--secondary);
+            color: var(--secondary);
+        }
+
+        .btn-games:hover {
+            background: var(--secondary);
+            color: #020617;
+        }
+
+        .brand {
+            margin-top: 60px;
+            font-size: 14px;
+            color: var(--muted);
+        }
+
+        .brand span {
+            color: var(--accent);
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 80px;
+            }
+
+            h2 {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="error-container">
+        <h1>404</h1>
+        <h2>Game Over. Page Not Found.</h2>
+        <p>
+            Looks like you’ve wandered into an uncharted level.
+            The page you’re looking for doesn’t exist — or it’s still loading in another universe.
+        </p>
+
+        <div class="actions">
+            <a href="index.html" class="btn btn-home">🏠 Back to Home</a>
+            <a href="about.html" class="btn btn-games">🎮 About murdigames</a>
+        </div>
+
+        <div class="brand">
+            © 2026 <span>murdi</span>games · Crafted for players
+        </div>
+    </div>
+
+</body>
+
+</html>
